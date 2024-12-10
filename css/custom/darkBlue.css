@@ -17,7 +17,3 @@
   fill: white;
   --cnvs-link-color: var(--darkBlue);
 }
-
-.semi-transparent-text-background.darkBlue {
-  background-color: rgba(30, 60, 114, 0.5);
-}
