@@ -329,7 +329,7 @@
 									<!-- required by staticForms.xyz -->
 									<input type="hidden" name="accessKey" value="a946fec7-7261-44c0-9c93-74c04dc58639">
 									<!-- If you want form to redirect to a specific url after submission -->
-									<input type="hidden" name="redirectTo" value="/message-sent-success.html">
+									<input id="redirectTo" type="hidden" name="redirectTo" value="">
 
 									<div class="col-md-6 form-group">
 										<label for="name">Name <small>*</small></label>
@@ -434,6 +434,27 @@
 
 		<!-- Canvas Scripts -->
 		<script src="js/functions.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				// Get the current domain
+				const currentDomain = window.location.origin;
+
+				// Construct the new URL path
+				const newPath = "/message-sent-success.html";
+
+				// Combine the domain and the new path
+				const newURL = currentDomain + newPath;
+
+				// Update the value of the input field
+				const redirectToInput = document.getElementById("redirectTo");
+				if (redirectToInput) {
+					redirectToInput.value = newURL;
+				}
+			});
+		</script>
+
+
 
 		<!-- reCaptcha -->
 
