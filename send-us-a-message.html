@@ -336,9 +336,14 @@
 									<!-- If you want form to redirect to a specific url after submission -->
 									<input id="redirectTo" type="hidden" name="redirectTo" value="">
 									<!-- Customize Subject to help Google AppScript identify emails -->
-								<input type="hidden" name="subject" value="Website-Message-Received">
+									<input type="hidden" name="subject" value="Website-Message-Received">
 
-									<div class="col-md-6 form-group">
+									<div class="col-md-6 mx-md-auto form-group">
+										<label for="firstName">First Name <small>*</small></label>
+										<input type="text" id="firstName" name="$firstName" class="form-control" required>
+									</div>
+
+									<div class="col-md-6 mx-md-auto form-group">
 										<label for="name">Name <small>*</small></label>
 										<input type="text" id="name" name="name" class="form-control" required>
 									</div>
