@@ -90,7 +90,7 @@
 
 </head>
 
-<body class="stretched samaritan-background">
+<body class="stretched samaritan-background page-transition" data-loader="2" data-animation-in="fadeIn" data-speed-in="1500" data-animation-out="fadeOut" data-speed-out="800">
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -341,9 +341,14 @@
 						<form class="row mb-0" id="contactForm" action="https://api.staticforms.xyz/submit" method="post">
 							<fieldset>
 								<!-- required by staticForms.xyz -->
-								<input type="hidden" name="accessKey" value="a946fec7-7261-44c0-9c93-74c04dc58639">
+								<input type="hidden" name="accessKey" value="e86b9da0-06b6-4d49-a19d-0825c9b33446">
 								<!-- If you want form to redirect to a specific url after submission -->
 								<input id="redirectTo" type="hidden" name="redirectTo" value="">
+
+								<div class="col-md-6 mx-md-auto form-group">
+									<label for="firstName">First Name <small>*</small></label>
+									<input type="text" id="firstName" name="$firstName" class="form-control" required>
+								</div>
 
 								<div class="col-md-6 mx-md-auto form-group">
 									<label for="name">Name <small>*</small></label>
