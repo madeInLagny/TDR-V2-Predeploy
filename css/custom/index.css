@@ -47,3 +47,14 @@
   gap: 5px;
   font-size: 1.7rem;
 }
+
+@media (max-width: 576px) {
+  #slider .slider-inner {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-start;
+    top: 50px;
+  }
+}
