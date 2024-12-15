@@ -82,6 +82,10 @@
 	<!-- CSS for index -->
 	<link rel="stylesheet" href="./css/custom/index.css">
 
+	<!-- Only Required if Samaritan color is required -->
+	<link rel="stylesheet" href="./css/custom/samaritan.css">
+
+
 </head>
 
 <body class="stretched dynamic-background">
@@ -93,6 +97,7 @@
 		<!-- Header
 		============================================= -->
 		<!-- header -->
+
 		<!-- Only Required if Icons are shown on page -->
 <!-- Font Icons Start -->
 <link rel="preload" href="./css/font-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -105,13 +110,13 @@
 
 <style>
   .dark {
-    --cnvs-contrast-bg: #677EC4;
+    --cnvs-contrast-bg: var(--samaritan);
 
   }
 
   .is-expanded-menu .sub-menu-container,
   .is-expanded-menu .mega-menu-content {
-    --cnvs-primary-menu-submenu-bg: #677EC4;
+    --cnvs-primary-menu-submenu-bg: var(--darkSamaritan);
   }
 
   a.menu-link {
